@@ -1,0 +1,51 @@
+.header {
+    background-color: #347ab4;
+    color: #ffffff;
+    height: 100px;
+    margin: 0;
+}
+
+:root {
+    --step--2: clamp(0.3475rem, 0.0562rem + 1.4565vw, 1.185rem);
+    --step--1: clamp(0.4169rem, 0.0982rem + 1.5935vw, 1.3331rem);
+    --step-0: clamp(0.5rem, 0.1522rem + 1.7391vw, 1.5rem);
+    --step-1: clamp(0.6rem, 0.2217rem + 1.8913vw, 1.6875rem);
+    --step-2: clamp(0.72rem, 0.31rem + 2.05vw, 1.8988rem);
+    --step-3: clamp(0.8638rem, 0.4214rem + 2.212vw, 2.1356rem);
+    --step-4: clamp(1.0369rem, 0.5619rem + 2.375vw, 2.4025rem);
+    --step-5: clamp(1.2444rem, 0.737rem + 2.537vw, 2.7031rem);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10vw;
+    color: #ffffff;
+    align-items: center;
+}
+
+a:link,
+a:visited {
+    color: #ffffff;
+    background-color: none;
+    text-decoration: none;
+    text-transform: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(57, 55, 55);
+}
+
+.logo {
+    background: url(logo.png);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,326 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Cinzel';
+    font-size: var(--step-0);
+    overflow-x: hidden;
+    background-position-x: center;
+    background-position-y: -110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+}
+
+:root {
+    --step--2: clamp(0.64rem, calc(0.38rem + 1.29vw), 1.38rem);
+    --step--1: clamp(0.80rem, calc(0.54rem + 1.31vw), 1.56rem);
+    --step-0: clamp(1.00rem, calc(0.74rem + 1.30vw), 1.75rem);
+    --step-1: clamp(1.25rem, calc(1.00rem + 1.25vw), 1.97rem);
+    --step-2: clamp(1.56rem, calc(1.34rem + 1.13vw), 2.22rem);
+    --step-3: clamp(1.95rem, calc(1.77rem + 0.94vw), 2.49rem);
+    --step-4: clamp(2.44rem, calc(2.32rem + 0.63vw), 2.80rem);
+    --step-5: clamp(3.05rem, calc(3.02rem + 0.18vw), 3.15rem);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin: max(2vh, 0.5rem) 0.5rem;
+}
+
+.sageata_responsive {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.navigatie {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    height: 760px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.background-alb {
+    margin-top: max(13vh, 1rem) 2.5rem;
+    height: 800px;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    padding-top: 80px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35vh;
+    height: max-content;
+}
+
+h1 {
+    font-size: var(--step-5);
+    font-weight: 120;
+}
+
+h2,
+h3 {
+    font-weight: 80;
+    font-size: var(--step-1);
+}
+
+p {
+    font-size: var(--step---1);
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+
+.space {
+    height: 100px;
+    display: flex;
+}
+
+a:link,
+a:visited {
+    color: none;
+    background-color: none;
+    text-decoration: none;
+    text-transform: none;
+    position: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    text-transform: none;
+    position: none;
+    color: rgb(57, 55, 55);
+}
+
+img.img {
+    animation: fadeIn 5s;
+    max-width: 100%;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(36, 36, 36);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(66, 66, 66);
+}
+
+.no-responsive {
+    display: none;
+}
+
+.hidden1,
+.hidden2,
+.hidden3,
+.hidden4 {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1.3s;
+}
+
+.hidden1 {
+    transform: translateX(-100%);
+}
+
+.hidden2 {
+    transform: translateX(100%);
+}
+
+.hidden3 {
+    transform: translateY(100%);
+}
+
+.hidden4 {
+    transform: translateY(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Cinzel';
+        overflow-x: hidden;
+        color: rgb(0, 0, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scroll-behavior: smooth;
+        animation-duration: 0.5s;
+        animation-name: fadeIn;
+    }
+    .poza {
+        height: fit-content;
+        width: fit-content;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .title {
+        padding-left: max(3vh, 1rem) 2.5rem;
+        padding-right: max(3vh, 1rem) 2.5rem;
+        padding-top: max(13vh, 1rem) 2.5rem;
+        padding-bottom: max(13vh, 1rem) 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15vh;
+        margin-inline: auto;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 13vh;
+        height: max-content;
+        padding: max(20vh, 2rem) 2.5rem;
+    }
+    .responsive {
+        display: none;
+    }
+    .sageata_responsive {
+        display: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .arrow {
+        border: solid rgb(0, 0, 0);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+     ::-webkit-scrollbar {
+        width: 1px;
+    }
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: rgb(36, 36, 36);
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: rgb(66, 66, 66);
+    }
+    .sageata_no-responsive {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .navigatie {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0px 2px 0px 2px;
+    }
+    .background-alb {
+        height: 820px;
+        text-align: center;
+    }
+    hr {
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 2px solid black;
+        min-width: 600px;
+    }
+}

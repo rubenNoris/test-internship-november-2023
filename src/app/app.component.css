@@ -1,0 +1,11 @@
+.header {
+    position: relative;
+    top: 0px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+}

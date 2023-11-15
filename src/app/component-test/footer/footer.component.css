@@ -1,0 +1,14 @@
+.footer {
+    background-color: #347ab4;
+    color: #ffffff;
+    height: 100px;
+    margin: 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
